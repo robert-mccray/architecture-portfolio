@@ -1,46 +1,54 @@
-import { Terminal, LineChart } from 'lucide-react';
+import { ShieldCheck, FileCheck } from 'lucide-react';
 
 export default function HealthcareCompliance() {
   return (
     <div className="max-w-6xl mx-auto px-6 pt-16 pb-24">
       <div className="mb-16 border-b border-navy-700 pb-8">
-        <h1 className="text-5xl font-extrabold text-white mb-4">Platform Engineering & FinOps</h1>
-        <p className="text-xl text-gold-500 font-medium">Self-service infrastructure meets rigorous cost control.</p>
+        <h1 className="text-5xl font-extrabold text-white mb-4">Healthcare & Compliance</h1>
+        <p className="text-xl text-gold-500 font-medium">Audit-ready data platforms for PHI/PII environments.</p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <div className="space-y-8">
-          <h2 className="text-3xl font-bold text-white flex items-center gap-3">
-            <Terminal className="text-gold-500" /> The Sentinel IDP
+      <div className="space-y-20">
+        {/* MHD Health System */}
+        <section>
+          <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <ShieldCheck className="text-gold-500" size={32} />
+            MHD Health System
           </h2>
-          <p className="text-slate-300 leading-relaxed">
-            Eliminated manual Jira ticketing bottlenecks by architecting a Spotify Backstage Internal Developer Portal. Enabled 60-second self-service database provisioning via dynamically generated Terraform. 
+          <p className="text-slate-300 mb-8 max-w-3xl leading-relaxed">
+            A security-by-design platform for PHI/PII ownership, controlled sharing, and analytics readiness — built with multi-tenant boundaries, audit-friendly access patterns, and production-first architecture.
           </p>
-          <div className="bg-navy-800 p-6 rounded border border-navy-600">
-            <h3 className="text-gold-400 font-bold mb-2">Shift-Left FinOps Gatekeeper</h3>
-            <p className="text-slate-300 text-sm">
-              Intercepts CI/CD Pull Requests using OPA and Infracost to identify cloud compute savings pre-merge, enforcing security-by-design and unit economics before code reaches production.
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+             <div className="bg-navy-800 p-8 rounded-xl border border-navy-600">
+                <h3 className="text-gold-400 font-bold mb-4">Core Requirements</h3>
+                <ul className="space-y-2 text-sm text-slate-300 list-disc list-inside">
+                  <li>Secure uploads + structured medical history</li>
+                  <li>Multi-tenant access boundaries + RBAC</li>
+                  <li>Time-scoped, auditable secure sharing</li>
+                  <li>Async ingestion (NLP/extraction) without blocking APIs</li>
+                </ul>
+             </div>
+             <div className="bg-navy-800 p-8 rounded-xl border border-navy-600">
+                <h3 className="text-gold-400 font-bold mb-4">Security by Design</h3>
+                <p className="text-sm text-slate-300">
+                  Identity-first access (Entra ID), tenant isolation, and auditable data flows (Row-level security, immutable bronze layer) — designed for compliance, not retrofitted.
+                </p>
+             </div>
           </div>
-          <img src="/images/core-infra/sentinel-idp.png" alt="Sentinel IDP" className="w-full rounded border border-navy-600 shadow-xl" />
-        </div>
+          <img src="/images/healthcare/mhd-architecture-diagram.jpg" alt="MHD Architecture" className="w-full rounded-xl border border-navy-600 shadow-2xl" />
+        </section>
 
-        <div className="space-y-8">
-          <h2 className="text-3xl font-bold text-white flex items-center gap-3">
-            <LineChart className="text-gold-500" /> Predictive Runtime Router
+        {/* Living Care Grooming */}
+        <section className="pt-12 border-t border-navy-700">
+          <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+            <FileCheck className="text-gold-500" size={32} />
+            Living Care Grooming Platform
           </h2>
-          <p className="text-slate-300 leading-relaxed">
-            A dynamic Layer-7 API Gateway that pulls real-time spot pricing and network latency for AWS and Azure. It evaluates this data millisecond by millisecond, autonomously routing traffic to the optimal cloud region.
+          <p className="text-slate-300 mb-8 max-w-3xl leading-relaxed">
+            A role-based booking and approval workflow system for grooming services in living care facilities — designed with audit logging, data governance, and analytics readiness from day one using a minimal Azure stack (Container Apps, Azure SQL, Data Factory).
           </p>
-          <div className="bg-navy-800 p-6 rounded border border-navy-600">
-            <h3 className="text-gold-400 font-bold mb-2">Trade-Off: Cost vs. UX</h3>
-            <p className="text-slate-300 text-sm">
-              I explicitly trade absolute bottom-dollar compute prices to maintain User Experience. If AWS is $0.01 cheaper but experiencing a 400ms latency spike, the AI routes to Azure. Optimization must never degrade performance.
-            </p>
-          </div>
-          {/* Note: This is the screenshot of the router deciding between AWS and Azure */}
-          <img src="/images/core-infra/router.png" alt="FinOps Router" className="w-full rounded border border-navy-600 shadow-xl" /> 
-        </div>
+          <img src="/images/healthcare/grooming-evidence-pack.png" alt="Grooming Evidence Pack" className="w-full rounded-xl border border-navy-600 shadow-2xl" />
+        </section>
       </div>
     </div>
   );

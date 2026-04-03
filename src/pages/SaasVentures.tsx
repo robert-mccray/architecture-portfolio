@@ -1,46 +1,43 @@
-import { Terminal, LineChart } from 'lucide-react';
+import { Globe, Building } from 'lucide-react';
 
 export default function SaasVentures() {
   return (
     <div className="max-w-6xl mx-auto px-6 pt-16 pb-24">
       <div className="mb-16 border-b border-navy-700 pb-8">
-        <h1 className="text-5xl font-extrabold text-white mb-4">Platform Engineering & FinOps</h1>
-        <p className="text-xl text-gold-500 font-medium">Self-service infrastructure meets rigorous cost control.</p>
+        <h1 className="text-5xl font-extrabold text-white mb-4">SaaS Ventures</h1>
+        <p className="text-xl text-gold-500 font-medium">Multi-tenant platforms engineered for scale and isolation.</p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <div className="space-y-8">
-          <h2 className="text-3xl font-bold text-white flex items-center gap-3">
-            <Terminal className="text-gold-500" /> The Sentinel IDP
-          </h2>
-          <p className="text-slate-300 leading-relaxed">
-            Eliminated manual Jira ticketing bottlenecks by architecting a Spotify Backstage Internal Developer Portal. Enabled 60-second self-service database provisioning via dynamically generated Terraform. 
-          </p>
-          <div className="bg-navy-800 p-6 rounded border border-navy-600">
-            <h3 className="text-gold-400 font-bold mb-2">Shift-Left FinOps Gatekeeper</h3>
-            <p className="text-slate-300 text-sm">
-              Intercepts CI/CD Pull Requests using OPA and Infracost to identify cloud compute savings pre-merge, enforcing security-by-design and unit economics before code reaches production.
+      <div className="space-y-16">
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+              <Building className="text-gold-500" size={32} />
+              CommunityLife Concierge
+            </h2>
+            <p className="text-slate-300 mb-6 leading-relaxed">
+              A multi-tenant SaaS platform engineered for residential communities. The system features strict architectural specifications for tenant isolation, secure data routing, and identity management across vastly different client organizations.
             </p>
           </div>
-          <img src="/images/core-infra/sentinel-idp.png" alt="Sentinel IDP" className="w-full rounded border border-navy-600 shadow-xl" />
-        </div>
+          <div className="bg-navy-800 p-2 rounded-xl border border-navy-600 shadow-2xl">
+             <img src="/images/saas/communitylife-topology.png" alt="CommunityLife Topology" className="w-full rounded-lg" />
+          </div>
+        </section>
 
-        <div className="space-y-8">
-          <h2 className="text-3xl font-bold text-white flex items-center gap-3">
-            <LineChart className="text-gold-500" /> Predictive Runtime Router
-          </h2>
-          <p className="text-slate-300 leading-relaxed">
-            A dynamic Layer-7 API Gateway that pulls real-time spot pricing and network latency for AWS and Azure. It evaluates this data millisecond by millisecond, autonomously routing traffic to the optimal cloud region.
-          </p>
-          <div className="bg-navy-800 p-6 rounded border border-navy-600">
-            <h3 className="text-gold-400 font-bold mb-2">Trade-Off: Cost vs. UX</h3>
-            <p className="text-slate-300 text-sm">
-              I explicitly trade absolute bottom-dollar compute prices to maintain User Experience. If AWS is $0.01 cheaper but experiencing a 400ms latency spike, the AI routes to Azure. Optimization must never degrade performance.
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center pt-12 border-t border-navy-700">
+           <div className="order-2 lg:order-1 bg-navy-800 p-2 rounded-xl border border-navy-600 shadow-2xl">
+             <img src="/images/saas/palm-and-oaks-ui.png" alt="Palm and Oaks UI" className="w-full rounded-lg" />
+          </div>
+          <div className="order-1 lg:order-2">
+            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+              <Globe className="text-gold-500" size={32} />
+              Palm & Oaks (Edge Architecture)
+            </h2>
+            <p className="text-slate-300 mb-6 leading-relaxed">
+              A high-performance experiential rental platform built using Vite, React, and Tailwind CSS. Deployed directly to Cloudflare's edge network via automated CI/CD pipelines to guarantee sub-second global latency and zero-maintenance scaling.
             </p>
           </div>
-          {/* Note: This is the screenshot of the router deciding between AWS and Azure */}
-          <img src="/images/core-infra/router.png" alt="FinOps Router" className="w-full rounded border border-navy-600 shadow-xl" /> 
-        </div>
+        </section>
       </div>
     </div>
   );
