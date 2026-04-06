@@ -40,10 +40,10 @@ export default function Home() {
 
       {/* The Metrics Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-32">
-        <MetricCard value="5+" label="Years Building Systems" />
-        <MetricCard value="Multi" label="Tenant + RBAC Patterns" />
-        <MetricCard value="PHI" label="Audit-Ready Pipelines" />
-        <MetricCard value="IaC" label="Governed Deployments" />
+        <MetricCard title="4+" subtitle="Years Building Systems" />
+        <MetricCard title="Multi" subtitle="Tenant + RBAC Patterns" />
+        <MetricCard title="PHI" subtitle="Audit-Ready Pipelines" />
+        <MetricCard title="IaC" subtitle="Governed Deployments" />
       </div>
 
     </div>
