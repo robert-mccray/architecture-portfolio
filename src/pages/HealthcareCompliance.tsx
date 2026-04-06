@@ -35,7 +35,7 @@ export default function HealthcareCompliance() {
                 </p>
              </div>
           </div>
-          <img src="/images/healthcare/mhd-architecture-diagram.jpg" alt="MHD Architecture" className="w-full rounded-xl border border-navy-600 shadow-2xl" />
+          <img src="/images/healthcare/mhd-architecture-diagram.png" alt="MHD Architecture" className="w-full rounded-xl border border-navy-600 shadow-2xl" />
         </section>
 
         {/* Living Care Grooming */}

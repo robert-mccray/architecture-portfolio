@@ -1,4 +1,4 @@
-import { LineChart, Server, Database } from 'lucide-react';
+import { LineChart } from 'lucide-react';
 
 export default function DistributedSystems() {
   return (

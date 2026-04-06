@@ -1,4 +1,4 @@
-import { ShieldAlert, Database, Cpu } from 'lucide-react';
+import { Database, Cpu } from 'lucide-react';
 
 export default function AiGuardrails() {
   return (
@@ -27,14 +27,14 @@ export default function AiGuardrails() {
             </div>
           </div>
           <div className="bg-navy-800 p-2 rounded-xl border border-navy-600 shadow-2xl">
-             <img src="/images/ai-guardrails/roi-engine-circuit-breaker.png" alt="ROI Circuit Breaker Terminal" className="w-full rounded-lg" />
+             <img src="/images/ai-guardrails/roi-engine-circuit-breaker.jpg" alt="ROI Circuit Breaker Terminal" className="w-full rounded-lg" />
           </div>
         </section>
 
         {/* System 2: Lineage Ledger */}
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1 bg-navy-800 p-2 rounded-xl border border-navy-600 shadow-2xl">
-            <img src="/images/ai-guardrails/lineage-ledger-hash.png" alt="Immutable Lineage Ledger" className="w-full rounded-lg" />
+            <img src="/images/ai-guardrails/lineage-ledger-hash.jpg" alt="Immutable Lineage Ledger" className="w-full rounded-lg" />
           </div>
           <div className="order-1 lg:order-2">
             <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">

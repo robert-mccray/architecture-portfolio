@@ -1,51 +1,46 @@
-import { Link } from 'react-router-dom';
 
-// A reusable sub-component for your metric cards
-const MetricCard = ({ value, label }: { value: string, label: string }) => (
-  <div className="border border-navy-700 bg-navy-800/50 rounded-2xl p-8 flex flex-col items-center justify-center text-center transition-all hover:border-gold-500/50 hover:bg-navy-800">
-    <div className="text-4xl md:text-5xl font-black text-gold-500 mb-4">{value}</div>
-    <div className="text-xs tracking-widest text-slate-400 font-semibold uppercase">{label}</div>
-  </div>
-);
+
+import { Link } from 'react-router-dom';
+import MetricCard from '../components/MetricCard';
 
 export default function Home() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-      
-      {/* Hero Text */}
-      <div className="max-w-5xl">
-        <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight leading-tight">
-          Architecting <span className="text-gold-500 drop-shadow-md">Secure Data Systems</span>
+    <div className="max-w-7xl mx-auto px-6 pt-20 pb-12">
+      {/* Hero Section */}
+      <div className="max-w-4xl">
+        <h1 className="text-6xl md:text-7xl font-extrabold text-white tracking-tight mb-6">
+          Architecting <span className="text-gold-500">Secure Data Systems</span>
         </h1>
-        <p className="mt-8 text-xl text-slate-300 max-w-3xl leading-relaxed">
-          I design <span className="text-white font-bold">multi-tenant, audit-ready</span>, cloud-native data platforms for regulated environments (PHI / PII / compliance-adjacent).
+        <p className="text-xl text-slate-300 leading-relaxed mb-8 max-w-3xl">
+          I design <strong className="text-white">multi-tenant, audit-ready</strong>, cloud-native data platforms for regulated environments (PHI / PII / compliance-adjacent).
         </p>
-      </div>
+        
+        {/* The "Pill" Buttons */}
+        <div className="flex flex-wrap gap-3 mb-10">
+          <Link to="/healthcare" className="px-5 py-2 rounded-full border border-navy-600 bg-navy-800/50 text-sm font-medium text-slate-300 hover:border-gold-500 hover:text-gold-400 transition-colors">MHD Case Study</Link>
+          <Link to="/healthcare" className="px-5 py-2 rounded-full border border-navy-600 bg-navy-800/50 text-sm font-medium text-slate-300 hover:border-gold-500 hover:text-gold-400 transition-colors">Azure Grooming Platform</Link>
+          <Link to="/core-infra" className="px-5 py-2 rounded-full border border-navy-600 bg-navy-800/50 text-sm font-medium text-slate-300 hover:border-gold-500 hover:text-gold-400 transition-colors">Security Model</Link>
+          <Link to="/architecture" className="px-5 py-2 rounded-full border border-navy-600 bg-navy-800/50 text-sm font-medium text-slate-300 hover:border-gold-500 hover:text-gold-400 transition-colors">Architecture Work</Link>
+        </div>
 
-      {/* Navigation Pills */}
-      <div className="flex flex-wrap gap-4 mt-12">
-        <span className="px-6 py-2 rounded-full border border-navy-700 bg-navy-800 text-slate-300 text-sm font-semibold hover:border-slate-500 cursor-pointer transition-all">MHD Case Study</span>
-        <span className="px-6 py-2 rounded-full border border-navy-700 bg-navy-800 text-slate-300 text-sm font-semibold hover:border-slate-500 cursor-pointer transition-all">Azure Grooming Platform</span>
-        <span className="px-6 py-2 rounded-full border border-navy-700 bg-navy-800 text-slate-300 text-sm font-semibold hover:border-slate-500 cursor-pointer transition-all">Security Model</span>
-        <span className="px-6 py-2 rounded-full border border-navy-700 bg-navy-800 text-slate-300 text-sm font-semibold hover:border-slate-500 cursor-pointer transition-all">Architecture Work</span>
-      </div>
-
-      {/* Primary CTAs */}
-      <div className="flex flex-wrap gap-4 mt-12">
-        <button className="px-8 py-3 bg-gold-500 text-navy-900 font-black tracking-wide rounded hover:bg-gold-400 transition-all shadow-lg shadow-gold-500/20">
-          View Case Study
-        </button>
-        <button className="px-8 py-3 border border-slate-600 text-white font-bold tracking-wide rounded hover:bg-slate-800 transition-all">
-          Email Me
-        </button>
-        <button className="px-8 py-3 border border-slate-600 text-white font-bold tracking-wide rounded hover:bg-slate-800 transition-all">
-          LinkedIn
-        </button>
+        {/* The Main Call to Actions */}
+        <div className="flex flex-wrap items-center gap-4 mb-20">
+          {/* I routed this to your newest, most impressive system: AI Guardrails */}
+          <Link to="/ai-guardrails" className="bg-gold-500 hover:bg-gold-400 text-navy-900 font-bold px-8 py-3.5 rounded transition-colors shadow-[0_0_15px_rgba(245,158,11,0.3)]">
+            View Case Study
+          </Link>
+          <a href="mailto:mccrayrobert26@gmail.com" className="border border-navy-700 bg-navy-800/80 hover:border-gold-500 px-8 py-3.5 rounded font-semibold text-white transition-all">
+            Email Me
+          </a>
+          <a href="https://linkedin.com/in/robert-mccray-467613195" target="_blank" rel="noreferrer" className="border border-navy-700 bg-navy-800/80 hover:border-gold-500 px-8 py-3.5 rounded font-semibold text-white transition-all">
+            LinkedIn
+          </a>
+        </div>
       </div>
 
       {/* The Metrics Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-24">
-        <MetricCard value="4+" label="Years Building Systems" />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-32">
+        <MetricCard value="5+" label="Years Building Systems" />
         <MetricCard value="Multi" label="Tenant + RBAC Patterns" />
         <MetricCard value="PHI" label="Audit-Ready Pipelines" />
         <MetricCard value="IaC" label="Governed Deployments" />

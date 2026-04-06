@@ -22,7 +22,7 @@ export default function PlatformFinops() {
               Intercepts CI/CD Pull Requests using OPA and Infracost to identify cloud compute savings pre-merge, enforcing security-by-design and unit economics before code reaches production.
             </p>
           </div>
-          <img src="/images/core-infra/sentinel-idp.png" alt="Sentinel IDP" className="w-full rounded border border-navy-600 shadow-xl" />
+          <img src="/images/core-infra/sentinel-idp.jpg" alt="Sentinel IDP" className="w-full rounded border border-navy-600 shadow-xl" />
         </div>
 
         <div className="space-y-8">
@@ -39,7 +39,7 @@ export default function PlatformFinops() {
             </p>
           </div>
           {/* Note: This is the screenshot of the router deciding between AWS and Azure */}
-          <img src="/images/core-infra/router.png" alt="FinOps Router" className="w-full rounded border border-navy-600 shadow-xl" /> 
+          <img src="/images/core-infra/router.jpg" alt="FinOps Router" className="w-full rounded border border-navy-600 shadow-xl" /> 
         </div>
       </div>
     </div>

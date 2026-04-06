@@ -7,6 +7,7 @@ import PlatformFinops from './pages/PlatformFinops';
 import DistributedSystems from './pages/DistributedSystems';
 import HealthcareCompliance from './pages/HealthcareCompliance';
 import SaasVentures from './pages/SaasVentures';
+import ArchitectureGallery from './pages/ArchitectureGallery';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/distributed-systems" element={<DistributedSystems />} />
             <Route path="/healthcare" element={<HealthcareCompliance />} />
             <Route path="/saas" element={<SaasVentures />} />
+            <Route path="/architecture" element={<ArchitectureGallery />} />
           </Routes>
         </main>
         <footer className="bg-navy-800 border-t border-navy-700 py-8 text-center text-sm text-slate-500 mt-20">
