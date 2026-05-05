@@ -43,7 +43,7 @@ export default function AiGuardrails() {
                 <p><strong className="text-white">The Trade-Off:</strong> Trading 150ms of execution latency for absolute M2M boundary enforcement.</p>
               </div>
               <div className="mt-8 pt-4 border-t border-navy-700">
-                <a href="https://github.com/yourusername/zero-trust-agentic-broker" target="_blank" rel="noreferrer" className="text-gold-500 hover:text-gold-400 text-sm font-bold uppercase tracking-wider flex items-center gap-2">
+                <a href="https://github.com/robert-mccray/zero-trust-agentic-broker" target="_blank" rel="noreferrer" className="text-gold-500 hover:text-gold-400 text-sm font-bold uppercase tracking-wider flex items-center gap-2">
                   View Repository →
                 </a>
               </div>
@@ -61,7 +61,7 @@ export default function AiGuardrails() {
                 <p><strong className="text-white">The Trade-Off:</strong> Trusting AI to autonomously mutate IAM roles to prevent manual alert fatigue.</p>
               </div>
               <div className="mt-8 pt-4 border-t border-navy-700">
-                <a href="https://github.com/yourusername/identity-dark-matter-sweeper" target="_blank" rel="noreferrer" className="text-gold-500 hover:text-gold-400 text-sm font-bold uppercase tracking-wider flex items-center gap-2">
+                <a href="https://github.com/robert-mccray/identity-dark-matter-sweeper" target="_blank" rel="noreferrer" className="text-gold-500 hover:text-gold-400 text-sm font-bold uppercase tracking-wider flex items-center gap-2">
                   View Repository →
                 </a>
               </div>
@@ -79,7 +79,7 @@ export default function AiGuardrails() {
                 <p><strong className="text-white">The Trade-Off:</strong> Trading developer convenience for mathematically verifiable SOC2 data lineage.</p>
               </div>
               <div className="mt-8 pt-4 border-t border-navy-700">
-                <a href="https://github.com/yourusername/cryptographic-rag-ledger" target="_blank" rel="noreferrer" className="text-gold-500 hover:text-gold-400 text-sm font-bold uppercase tracking-wider flex items-center gap-2">
+                <a href="https://github.com/robert-mccray/cryptographic-rag-ledger" target="_blank" rel="noreferrer" className="text-gold-500 hover:text-gold-400 text-sm font-bold uppercase tracking-wider flex items-center gap-2">
                   View Repository →
                 </a>
               </div>
